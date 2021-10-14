@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <div>
+        <form action="Blog/creta_post/" method="post">
+            {% csrf_token %}
+            <li>
+                <label for="title">Title</label>
+                <input id="title" name="title" type="text">
+
+            </li>
+            <br>
+            <li>
+                <label for="description">Description</label>
+                <input id="description" name="description" type="text">
+            </li>
+            <br>
+                        <li>
+                <label for="image">Image</label>
+                <input id="image" name="image" type="image">
+            </li>
+            <br>
+                        <li>
+                <label for="hashtag">Hashtag</label>
+                <input id="hashtag" name="hashtag" type="text">
+            </li>
+            <br>
+            <li>
+                <input type="submit">
+            </li>
+            <br>
+
+
+
+        </form>
+
+</body>
+</html>

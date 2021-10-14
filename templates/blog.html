@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+</head>
+<body>
+    {% for i in blog_list %}
+        <a href="/Blog/{{ i.id }}/">{{ i.title }}</a><br/>
+        <p><img src="../media/{{ i.image }}" alt="" width="600px" height="400px"/></p>
+        <p>{{ i.description }}</p>
+        <p>{{ i.hashtag }}</p>
+        <br>
+    {% endfor %}
+
+</body>
+</html>
